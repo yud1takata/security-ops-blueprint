@@ -27,7 +27,7 @@ die()  { printf "[✗] %s\n" "$*" >&2; exit 1; }
 # Configuration (override via environment)
 # -----------------------------------------------------------------------------
 
-OPERATOR_DOTFILES_REPO="${OPERATOR_DOTFILES_REPO:-git@github.com:mrjmriii/operator-dotfiles.git}"
+OPERATOR_DOTFILES_REPO="${OPERATOR_DOTFILES_REPO:-git@github.com:example/operator-dotfiles.git}"
 OPERATOR_DOTFILES_BRANCH="${OPERATOR_DOTFILES_BRANCH:-master}"
 IDENTITY_PROFILE="${IDENTITY_PROFILE:-default}"
 

@@ -21,7 +21,7 @@ hosts:
       interface: eth0
     access:
       ssh: true
-      ansible_user: mrjmriii
+      ansible_user: operator
     tags: [workstation, controller]
 
   hypervisor-01:
