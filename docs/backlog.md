@@ -23,3 +23,4 @@ mapped to the delivery model in `docs/project-planning.md`.
 | BL-008 | Automate pseudotwin sanitization + sync | Important | Waterfall | Ready | Sanitizer run updates public blueprint safely. |
 | BL-009 | Add weekly integration smoke test | Important | Agile | Ready | Single command validates core integrations. |
 | BL-010 | Document API key rotation cadence | Important | Kanban | Ready | Rotation steps + schedule documented. |
+| BL-011 | Add project governance scaffolds (RACI, SWOT, PESTLE, compliance) | Important | Waterfall | Done | Planning templates published in docs. |

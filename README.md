@@ -39,6 +39,7 @@ Start with `docs/README.md` for the full index.
 ## Planning
 - Project planning model: `docs/project-planning.md`
 - Backlog: `docs/backlog.md`
+- Project governance scaffolds: `docs/project-governance.md`
 
 ## Public repo hygiene
 This repo is intentionally sanitized:

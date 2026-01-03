@@ -51,6 +51,7 @@ Human-readable doctrine, baselines, and design notes.
 ## Planning
 - Project planning model: `docs/project-planning.md`
 - Backlog: `docs/backlog.md`
+- Project governance scaffolds: `docs/project-governance.md`
 
 ## Baselines
 - `docs/baselines/edge-firewall`
