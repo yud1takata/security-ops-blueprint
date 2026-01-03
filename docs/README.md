@@ -52,6 +52,8 @@ Human-readable doctrine, baselines, and design notes.
 - Project planning model: `docs/project-planning.md`
 - Backlog: `docs/backlog.md`
 - Project governance scaffolds: `docs/project-governance.md`
+- AI agent operating model: `docs/ai-agents.md`
+- Agent requests log: `docs/agent-requests.md`
 
 ## Baselines
 - `docs/baselines/edge-firewall`

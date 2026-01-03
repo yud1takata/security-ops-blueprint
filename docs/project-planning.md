@@ -28,3 +28,7 @@ Prefer "waterfall when we can, agile when we can't, kanban when we can't agile."
 - Source of truth: `docs/backlog.md`.
 - Each entry includes Eisenhower quadrant + delivery mode + exit criteria.
 - Review weekly; re-triage urgent items immediately.
+
+## Agent Operations
+- Agent model: `docs/ai-agents.md`.
+- Token request log: `docs/agent-requests.md`.
