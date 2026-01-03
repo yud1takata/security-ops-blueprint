@@ -1,6 +1,6 @@
 # Social-Engineering Posture Drift (Lab Scenarios)
 
-## Overview
+## Purpose
 Social engineering often pushes organizations into making "temporary" exceptions that become long-lived security drift. In this lab, we model those posture shifts as **repeatable, testable infrastructure states** so we can validate detection and response (SIEM platform/case management platform/edge firewall/hypervisor) without guessing what changed.
 
 These scenarios are **lab-only**. They are **not recommendations**. The purpose is to simulate realistic drift and build controls that detect and remediate it.
@@ -10,7 +10,7 @@ These scenarios are **lab-only**. They are **not recommendations**. The purpose 
 - Ansible inventory targets are defined and reachable.
 - Baseline services and logging are running (SIEM platform/case management platform/edge firewall).
 
-## How to run
+## Steps to run
 Each posture has a placeholder playbook under:
 
 ```
@@ -23,14 +23,14 @@ Run a posture playbook explicitly when you are ready to model it:
 ANSIBLE_CONFIG=ansible/ansible.cfg ansible-playbook ansible/postures/social_engineering/01_mfa_relaxation.yml -e posture_action=apply
 ```
 
-## How to revert
+## Rollback/Revert
 Revert the posture when the test is done:
 
 ```
 ANSIBLE_CONFIG=ansible/ansible.cfg ansible-playbook ansible/postures/social_engineering/01_mfa_relaxation.yml -e posture_action=revert
 ```
 
-## How to validate
+## Validation checklist
 - Use the **Lab Validation Playlist**: `docs/validation-playlist.md`
 - Review edge firewall posture checks: `docs/maintenance-bypass.md`
 - Correlate SIEM platform alerts with case management platform cases and add response notes.

@@ -23,5 +23,5 @@
 - Generate a benign test signature and confirm an alert.
 - Confirm alert visibility in the SIEM platform UI.
 
-## Rollback
+## Rollback/Revert
 - `ANSIBLE_CONFIG=ansible/ansible.cfg ansible-playbook ansible/playbooks/blueprint_edge_ids.yml --limit edge_firewall -e ids_state=absent`

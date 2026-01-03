@@ -33,7 +33,7 @@
 - `curl -s https://<telemetry-manager>/api/agents`
 - Confirm per-group config exists in the manager shared config path.
 
-## Rollback
+## Rollback/Revert
 - Uninstall agents: `-e telemetry_agent_state=absent` on `blueprint_agent_install.yml`.
 - Remove groups: `-e telemetry_group_state=absent` on `blueprint_agent_groups.yml`.
 - Unassign groups: `-e telemetry_group_assign_state=absent` on `blueprint_agent_group_assign.yml`.

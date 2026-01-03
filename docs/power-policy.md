@@ -3,6 +3,11 @@
 ## Purpose
 Keep always-on footprint minimal while ensuring core services stay reachable.
 
+## Scope
+- Lab infrastructure (SOC, adversary lab, targets).
+- Personal services mode (personal cloud, document archive, AI workstation).
+- Backup appliance and CA power practices.
+
 ## Dependencies
 - Hypervisor reachable for start/stop actions.
 - Tags and profiles defined in inventory vars.
@@ -47,6 +52,6 @@ Recommended tags:
 - hypervisor UI shows expected VM states (running/stopped).
 - Tag assignments match your power profile plan.
 
-## Rollback
+## Rollback/Revert
 - Switch back to the previous mode using your power profile playbook.
 - If tag sync was incorrect, re-run the power profile sync after fixing tag maps.

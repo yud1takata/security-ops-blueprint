@@ -23,5 +23,5 @@
 - `ANSIBLE_CONFIG=ansible/ansible.cfg ansible -i ansible/inventory/hosts.yml windows_endpoints -m ansible.windows.win_ping`
 - Confirm WinRM listener is HTTPS-only on the host.
 
-## Rollback
+## Rollback/Revert
 - `ANSIBLE_CONFIG=ansible/ansible.cfg ansible-playbook ansible/playbooks/blueprint_windows_remote_mgmt_tls.yml --limit windows_endpoints -e winrm_tls_state=absent`

@@ -11,6 +11,7 @@ Bootstrap and helper scripts.
 
 ## Validation playlist
 - Blueprint validation script: `scripts/validate-blueprint.sh`
+- Doc lint script: `scripts/validate-docs.sh`
 
 ## Sanitization helper
 - Blueprint sanitize script: `scripts/sanitize-blueprint.sh`

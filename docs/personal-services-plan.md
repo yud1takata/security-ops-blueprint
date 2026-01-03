@@ -54,14 +54,14 @@ when the lab is down, without diluting SOC safety or reproducibility.
 - VM provisioning playbooks (placeholder)
 - Service install playbooks (placeholder)
 
-## Validation checklist
+## Validation
 - DNS: `dig personal-cloud-01.example.net` / `document-archive-01.example.net` / `ai-workstation-01.example.net`.
 - TLS: browser shows trusted cert from the internal CA.
 - Personal cloud UI loads and responds (HTTP 200/302).
 - Document archive UI loads and responds (HTTP 200/302).
 - AI workstation services respond on expected ports.
 
-## Rollback
+## Rollback/Revert
 - Stop personal VMs (switch back to lab mode).
 - Remove edge firewall host overrides + DHCP reservations if decommissioned.
 - Revert TLS certs via your internal PKI playbook if needed.

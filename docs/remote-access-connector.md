@@ -24,6 +24,6 @@
 - Confirm the connector shows healthy in the admin portal.
 - Test a resource URL via the remote access client.
 
-## Rollback
+## Rollback/Revert
 - `ANSIBLE_CONFIG=ansible/ansible.cfg ansible-playbook ansible/playbooks/blueprint_remote_access_connector.yml --limit hypervisor -e connector_state=absent`
 - Remove the connector VM/container from the hypervisor if created.

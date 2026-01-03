@@ -4,6 +4,11 @@
 Provide a repeatable, lab-only adversary environment that feeds the SOC
 with realistic telemetry without destabilizing core infrastructure.
 
+## Scope
+- Adversary lab networks and segmented targets.
+- Vulnerable targets and lab tooling used for detection validation.
+- Telemetry capture for SOC correlation.
+
 ## Dependencies
 - Internal hypervisor bridges created for lab networks.
 - Lab router provisioned with NAT and firewall policy.

@@ -30,3 +30,4 @@ mapped to the delivery model in `docs/project-planning.md`.
 | BL-015 | Harmonize documentation with standards + terminology | Important | Waterfall | Done | Standards + terminology docs published; key plans aligned to Purpose. |
 | BL-016 | Normalize runbooks to doc lint checklist | Important | Waterfall | Done | Runbooks aligned to required sections and checklist added. |
 | BL-017 | Normalize plan docs with dependencies/risks/validation | Important | Waterfall | Done | Plan docs updated to include dependencies, risks, and validation guidance. |
+| BL-018 | Add doc lint script for runbooks + plans | Important | Waterfall | Done | `scripts/validate-docs.sh` enforces headings. |

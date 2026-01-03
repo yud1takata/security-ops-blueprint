@@ -32,3 +32,6 @@ Run before merge:
 - Plans include: Purpose, Scope, Dependencies, Risks, Validation.
 - Terms align with `docs/terminology.md`.
 - Lab-only settings are labeled and reversible.
+
+Doc lint helper:
+- `scripts/validate-docs.sh`

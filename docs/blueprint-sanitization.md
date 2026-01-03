@@ -25,7 +25,7 @@
 - `rg -n "192\\.168\\.|10\\.|172\\.(1[6-9]|2[0-9]|3[0-1])\\." docs ansible data`
 - `rg -n "BEGIN (RSA|EC|OPENSSH) PRIVATE KEY|AKIA" -S .`
 
-## Rollback
+## Rollback/Revert
 - `git restore .` to discard staged changes.
 - `git revert <commit>` if already committed.
 

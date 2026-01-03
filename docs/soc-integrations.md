@@ -3,6 +3,11 @@
 ## Purpose
 Record integration intent and signal flow so automation is safe to implement later.
 
+## Scope
+- SIEM, case management, analysis, threat intel, and automation wiring.
+- API keys and connector configuration.
+- Lab-only validation of alert flow and enrichment.
+
 ## Dependencies
 - SIEM, case management, analysis, and threat intel services reachable.
 - API keys stored in secure vars (vault or secrets manager).

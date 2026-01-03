@@ -4,6 +4,11 @@
 Ensure every lab endpoint is monitored and detections are testable, repeatable,
 and tied to response workflows in case management platform/analysis platform/threat intel platform.
 
+## Scope
+- Endpoint telemetry for lab servers, workstations, and targets.
+- Threat intel enrichment and analyzer workflows.
+- Lab-only detections and posture tests.
+
 ## Dependencies
 - Telemetry manager reachable on enrollment ports.
 - Agent group model defined in `data/telemetry/groups.yml`.

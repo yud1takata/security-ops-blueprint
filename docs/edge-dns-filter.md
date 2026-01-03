@@ -23,5 +23,5 @@
 - Query a known test domain and confirm block behavior.
 - Confirm blocked event in the SIEM UI.
 
-## Rollback
+## Rollback/Revert
 - `ANSIBLE_CONFIG=ansible/ansible.cfg ansible-playbook ansible/playbooks/blueprint_edge_dns_filter.yml --limit edge_firewall -e dns_filter_state=absent`

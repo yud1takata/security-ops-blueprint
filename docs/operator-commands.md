@@ -43,7 +43,7 @@ Run from the repo root:
 - `ANSIBLE_CONFIG=ansible/ansible.cfg ansible -i ansible/inventory/hosts.yml all -m ping`
 - `ANSIBLE_CONFIG=ansible/ansible.cfg ansible-playbook ansible/playbooks/blueprint_validation.yml --check`
 
-## Rollback
+## Rollback/Revert
 - Power profiles: rerun with `profile_action=stop`.
 - Individual baselines: re-run the same playbook after restoring prior variables.
 - Network/DNS changes: revert inventory + variable changes, then re-run `blueprint_edge_firewall.yml`.
