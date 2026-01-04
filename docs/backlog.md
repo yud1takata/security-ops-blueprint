@@ -31,6 +31,11 @@ mapped to the delivery model in `docs/project-planning.md`.
 | BL-016 | Normalize runbooks to doc lint checklist | Important | Waterfall | Done | Runbooks aligned to required sections and checklist added. |
 | BL-017 | Normalize plan docs with dependencies/risks/validation | Important | Waterfall | Done | Plan docs updated to include dependencies, risks, and validation guidance. |
 | BL-018 | Add doc lint script for runbooks + plans | Important | Waterfall | Done | `scripts/validate-docs.sh` enforces headings. |
+| BL-024 | Telemetry: reduce noisy web gateway 4xx/5xx alerts on `soc` group | Important | Agile | Ready | Group-scoped overrides documented in `docs/telemetry-agent-operations.md` + `data/telemetry/groups.yml`; log test utility evidence captured; 5xx spikes and repeated 4xx per source still alert (MITRE T1190). |
+| BL-025 | Telemetry: tune promiscuous mode alerts on `soc` group | Important | Agile | Ready | Rule tuning scoped to `soc`; verification logs show unauthorized promisc still alerts (MITRE T1040). |
+| BL-026 | Telemetry: reduce access-control deny noise on `infra` + `workstations` | Important | Agile | Ready | Group-scoped allowlists documented; alerting preserved for defense impairment attempts (MITRE T1562); validation logs captured. |
+| BL-027 | Telemetry: reduce auth success noise on `infra` | Important | Agile | Ready | Frequency/threshold tuning documented; anomalous login bursts still alert (MITRE T1078); validation logs captured. |
+| BL-028 | Telemetry: tune file integrity change noise on `infra` + `soc` | Important | Agile | Ready | FIM exclusions documented; critical file changes still alert (MITRE T1565); validation logs captured. |
 | BL-019 | Governance compliance sprint kickoff + milestones | Important | Waterfall | Ready | Sprint plan published; kickoff scheduled; milestones confirmed. |
 | BL-020 | Publish classification + sanitize checklist | Important | Waterfall | Ready | Checklist published; public release steps documented. |
 | BL-021 | Public blueprint audit for vendor-specific terms and RFC1918 | Important | Agile | Ready | Audit log saved; findings remediated or accepted with rationale. |
