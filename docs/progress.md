@@ -6,6 +6,10 @@
 - Log: `docs/logs/blueprint-validate-YYYYMMDD-HHMMSS.log`
 - Summary: Short result summary + follow-ups.
 
+## 2026-01-04
+- Rewrote public history to remove accidentally unsanitized internal details.
+- Replaced the removed content with vendor-neutral edge DNS filtering and guest/WAP guidance.
+
 ## 2025-12-30
 - Defined RedTeamLab plan and SOC monitoring plan (SOC-first).
 - Added PentestNet/HiddenNet/RedTeamLab to the data model (hosts + networks).
