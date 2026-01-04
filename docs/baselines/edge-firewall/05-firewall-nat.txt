@@ -1,5 +1,7 @@
 Default deny policy.
 Explicit allow rules for LAN and WAP interfaces.
+Guest/WAP policy: allow DNS to the edge resolver, allow outbound HTTP/HTTPS,
+block RFC1918/internal segments, require remote access overlay for internal access.
 NAT:
 - Outbound NAT on WAN for internal subnets
 - No inbound port forwards configured

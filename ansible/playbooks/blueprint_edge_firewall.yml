@@ -2,8 +2,18 @@
 - name: Edge firewall blueprint (sanitized)
   hosts: edge_firewall
   gather_facts: false
+  vars:
+    guest_wlan_policy_state: "{{ guest_wlan_policy_state | default('present') }}"
+    guest_wlan_allowed_ports: "{{ guest_wlan_allowed_ports | default([53, 80, 443]) }}"
+    guest_wlan_block_internal: "{{ guest_wlan_block_internal | default(true) }}"
 
   tasks:
     - name: Describe intended posture (placeholder)
       ansible.builtin.debug:
         msg: "Edge firewall: enforce segmentation, DNS/DHCP, and default-deny posture."
+    - name: Describe guest/WAP policy intent (placeholder)
+      ansible.builtin.debug:
+        msg: >-
+          Guest/WAP policy state={{ guest_wlan_policy_state }},
+          allow ports={{ guest_wlan_allowed_ports }},
+          block internal={{ guest_wlan_block_internal }}.

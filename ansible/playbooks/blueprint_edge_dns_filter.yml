@@ -4,6 +4,10 @@
   gather_facts: false
   vars:
     dns_filter_state: "{{ dns_filter_state | default('present') }}"
+    dns_sinkhole_vip_state: "{{ dns_sinkhole_vip_state | default('present') }}"
+    dns_sinkhole_vip: "{{ dns_sinkhole_vip | default({}) }}"
+    dns_filter_log_limits: "{{ dns_filter_log_limits | default({}) }}"
+    dns_filter_bypass_cidrs: "{{ dns_filter_bypass_cidrs | default([]) }}"
 
   tasks:
     - name: Describe DNS filter deployment (placeholder)
@@ -11,3 +15,16 @@
         msg: >-
           Apply edge DNS filtering with state={{ dns_filter_state }} and
           validate block/allow policy behavior.
+    - name: Describe DNS sinkhole VIP intent (placeholder)
+      ansible.builtin.debug:
+        msg: >-
+          Manage DNS sinkhole VIP with state={{ dns_sinkhole_vip_state }}
+          and config={{ dns_sinkhole_vip | to_json }}.
+    - name: Describe DNS filter log volume limits (placeholder)
+      ansible.builtin.debug:
+        msg: >-
+          Apply DNS filter log limits: {{ dns_filter_log_limits | to_json }}.
+    - name: Describe DNS filter bypass CIDRs (placeholder)
+      ansible.builtin.debug:
+        msg: >-
+          Apply DNS filter bypass CIDRs: {{ dns_filter_bypass_cidrs | to_json }}.
