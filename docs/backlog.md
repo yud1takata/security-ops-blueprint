@@ -42,6 +42,22 @@ mapped to the delivery model in `docs/project-planning.md`.
 | BL-032 | Backup integrity + immutability controls | Important | Waterfall | Ready | Verification outputs captured; retention/immutability controls documented; residual risk noted. |
 | BL-033 | Business continuity + disaster recovery runbooks | Important | Waterfall | Ready | BCP/DRP docs include roles, comms plan, alternate processing guidance, and test cadence. |
 | BL-034 | Backup failure monitoring + alerting | Important | Agile | Ready | Alerts on failed jobs; escalation paths documented; test alert evidence captured. |
+| BL-035 | Status endpoint + health rollout | Important | Waterfall | Ready | /status schema defined; services emit health; status view validated; evidence captured. |
+| BL-036 | Automated social engineering postures (lab-only) | Important | Waterfall | Ready | Posture automation apply/revert; warnings documented; telemetry captured. |
+| BL-037 | Red team lab core buildout (directory services + endpoints) | Important | Waterfall | Ready | Directory services and endpoints operational; lab-only posture toggles documented; validation evidence stored. |
+| BL-038 | Recon + footprinting automation | Important | Agile | Ready | OSINT/DNS/web footprint automation; outputs normalized; evidence stored. |
+| BL-039 | Active information gathering automation | Important | Agile | Ready | Host/service discovery automation; noise controls; evidence stored. |
+| BL-040 | Vulnerability assessment automation | Important | Agile | Ready | Scanner orchestration; result parsing; risk triage captured. |
+| BL-041 | Network penetration testing automation | Important | Agile | Ready | Shell infrastructure and pivoting automation; lab-only safeguards; evidence stored. |
+| BL-042 | Exploitation automation | Important | Agile | Ready | Service exploit automation; lab-only safeguards; evidence stored. |
+| BL-043 | Post-exploitation automation | Important | Agile | Ready | Post-exploitation workflows automated; containment and cleanup steps documented. |
+| BL-044 | Directory services attack automation | Important | Agile | Ready | Directory service enumeration and trust abuse automation; detection hooks defined. |
+| BL-045 | Advanced directory attacks + detection engineering | Important | Waterfall | Ready | Advanced attack automation; detections mapped and validated. |
+| BL-046 | Command and control (C2) automation | Important | Waterfall | Ready | C2 lab framework automated; operator workflows documented. |
+| BL-047 | Wireless penetration testing automation | Important | Agile | Ready | Wireless lab tooling automated; RADIUS workflow documented. |
+| BL-048 | Advanced wireless penetration testing automation | Important | Agile | Ready | WPA/WPA2/WPA3 and enterprise workflows automated; evidence stored. |
+| BL-049 | Wireless security hardening automation | Important | Waterfall | Ready | Wireless hardening controls automated; validation evidence captured. |
+| BL-050 | Web application security automation | Important | Agile | Ready | OWASP-aligned testing automation; evidence stored; detections mapped. |
 | BL-019 | Governance compliance sprint kickoff + milestones | Important | Waterfall | Ready | Sprint plan published; kickoff scheduled; milestones confirmed. |
 | BL-020 | Publish classification + sanitize checklist | Important | Waterfall | Ready | Checklist published; public release steps documented. |
 | BL-021 | Public blueprint audit for vendor-specific terms and RFC1918 | Important | Agile | Ready | Audit log saved; findings remediated or accepted with rationale. |
