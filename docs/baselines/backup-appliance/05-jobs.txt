@@ -1,5 +1,5 @@
-Prune job: prune-backup (daily 03:30)
+Prune job: prune-backup (daily)
 Retention: last 7, daily 14, weekly 8, monthly 12 (yearly not set; revisit)
-Verify job: verify-backup (Sun 04:30)
-Garbage collection: Sun 05:30
+Verify job: verify-backup (weekly)
+Garbage collection: weekly
 Sync jobs: none
