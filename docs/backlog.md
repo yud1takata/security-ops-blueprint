@@ -37,6 +37,11 @@ mapped to the delivery model in `docs/project-planning.md`.
 | BL-027 | Telemetry: reduce auth success noise on `infra` | Important | Agile | Ready | Frequency/threshold tuning documented; anomalous login bursts still alert (MITRE T1078); validation logs captured. |
 | BL-028 | Telemetry: tune file integrity change noise on `infra` + `soc` | Important | Agile | Ready | FIM exclusions documented; critical file changes still alert (MITRE T1565); validation logs captured. |
 | BL-029 | Add DNS high availability + redundancy (multiple resolvers, failover validation) | Important | Waterfall | Ready | Secondary resolver deployed; clients use multiple resolvers; failover test passes; docs updated. |
+| BL-030 | Backup BIA + RTO/RPO/MTD definitions | Important | Waterfall | Ready | BIA doc captures critical assets, data owners, RTO/RPO/MTD, and risk tolerance. |
+| BL-031 | Backup verification + restore drill | Important | Agile | Ready | Restore tests executed; evidence logs saved; RPO measured; lessons recorded. |
+| BL-032 | Backup integrity + immutability controls | Important | Waterfall | Ready | Verification outputs captured; retention/immutability controls documented; residual risk noted. |
+| BL-033 | Business continuity + disaster recovery runbooks | Important | Waterfall | Ready | BCP/DRP docs include roles, comms plan, alternate processing guidance, and test cadence. |
+| BL-034 | Backup failure monitoring + alerting | Important | Agile | Ready | Alerts on failed jobs; escalation paths documented; test alert evidence captured. |
 | BL-019 | Governance compliance sprint kickoff + milestones | Important | Waterfall | Ready | Sprint plan published; kickoff scheduled; milestones confirmed. |
 | BL-020 | Publish classification + sanitize checklist | Important | Waterfall | Ready | Checklist published; public release steps documented. |
 | BL-021 | Public blueprint audit for vendor-specific terms and RFC1918 | Important | Agile | Ready | Audit log saved; findings remediated or accepted with rationale. |
