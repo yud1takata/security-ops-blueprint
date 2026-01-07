@@ -33,6 +33,7 @@ Human-readable doctrine, baselines, and design notes.
 - Windows remote management: `docs/windows-remote-management.md`
 - Pseudotwin map: `docs/pseudotwin-map.md`
 - Blueprint sanitization workflow: `docs/blueprint-sanitization.md`
+- Endpoint firewall + middlebox plan: `docs/endpoint-firewall.md`
 
 ## Policies
 - Power policy: `docs/power-policy.md`

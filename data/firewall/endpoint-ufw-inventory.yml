@@ -1,0 +1,239 @@
+---
+metadata:
+  owner: soc
+  updated: 2026-01-07
+  version: 1
+  source: docs/endpoint-firewall.md
+
+defaults:
+  inbound_policy: deny
+  outbound_policy: allow
+  allow_established: true
+  allow_loopback: true
+  log_dropped_inbound: true
+
+sources:
+  mgmt_subnet: 192.0.2.0/24
+  control_host: 192.0.2.10
+  soc_proxy: 192.0.2.20
+  edge_firewall: 192.0.2.1
+  lab_subnets:
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+
+endpoints:
+  - name: hypervisor-01
+    host: hypervisor-01.example.net
+    role: hypervisor
+    ufw_mode: review
+    notes: "Hypervisor may ship with its own firewall; confirm compatibility."
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+      - service: hypervisor_ui
+        proto: tcp
+        port: 443
+        source: mgmt_subnet
+      - service: node_exporter
+        proto: tcp
+        port: 9100
+        source: soc_proxy
+
+  - name: backup-01
+    host: backup-01.example.net
+    role: backup_appliance
+    ufw_mode: review
+    notes: "Confirm backup appliance firewall compatibility before enforcing."
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+      - service: backup_ui
+        proto: tcp
+        port: 443
+        source: mgmt_subnet
+      - service: node_exporter
+        proto: tcp
+        port: 9100
+        source: soc_proxy
+
+  - name: soc-core-01
+    host: soc-core-01.example.net
+    role: soc_stack
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+      - service: soc_https_proxy
+        proto: tcp
+        port: 443
+        source: mgmt_subnet
+
+  - name: siem-01
+    host: siem-01.example.net
+    role: siem
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+      - service: siem_ui
+        proto: tcp
+        port: 5601
+        source: mgmt_subnet
+      - service: agent_ingest
+        proto: tcp
+        port: 1514
+        source: lab_subnets
+      - service: agent_enroll
+        proto: tcp
+        port: 1515
+        source: lab_subnets
+      - service: syslog_udp
+        proto: udp
+        port: 514
+        source: edge_firewall
+      - service: syslog_tcp
+        proto: tcp
+        port: 514
+        source: edge_firewall
+      - service: siem_api
+        proto: tcp
+        port: 55000
+        source: control_host
+
+  - name: intel-01
+    host: intel-01.example.net
+    role: threat_intel
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+      - service: intel_ui
+        proto: tcp
+        port: 443
+        source: mgmt_subnet
+
+  - name: mail-01
+    host: mail-01.example.net
+    role: mail
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+      - service: smtp
+        proto: tcp
+        port: 25
+        source: mgmt_subnet
+      - service: submission
+        proto: tcp
+        port: 587
+        source: mgmt_subnet
+      - service: imaps
+        proto: tcp
+        port: 993
+        source: mgmt_subnet
+
+  - name: pki-01
+    host: pki-01.example.net
+    role: pki
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+
+  - name: ai-01
+    host: ai-01.example.net
+    role: ai_workstation
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+      - service: llm_ui
+        proto: tcp
+        port: 3000
+        source: mgmt_subnet
+      - service: automation_ui
+        proto: tcp
+        port: 5678
+        source: mgmt_subnet
+      - service: search_ui
+        proto: tcp
+        port: 8080
+        source: mgmt_subnet
+      - service: llm_api_tls
+        proto: tcp
+        port: 11434
+        source: mgmt_subnet
+
+  - name: remote-access-01
+    host: remote-access-01.example.net
+    role: remote_access_connector
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+
+  - name: lab-router-01
+    host: lab-router-01.example.net
+    role: lab_router
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: mgmt_subnet
+      - service: rdp
+        proto: tcp
+        port: 3389
+        source: mgmt_subnet
+      - service: winrm_https
+        proto: tcp
+        port: 5986
+        source: mgmt_subnet
+      - service: http
+        proto: tcp
+        port: 80
+        source: mgmt_subnet
+      - service: https
+        proto: tcp
+        port: 443
+        source: mgmt_subnet
+
+  - name: security-workstation-01
+    host: security-ws-01.example.net
+    role: security_workstation
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+      - service: rdp
+        proto: tcp
+        port: 3389
+        source: mgmt_subnet
+
+  - name: radius-01
+    host: radius-01.example.net
+    role: radius
+    inbound:
+      - service: ssh
+        proto: tcp
+        port: 22
+        source: control_host
+      - service: radius_auth
+        proto: udp
+        port: 1812
+        source: lab_subnets
+      - service: radius_accounting
+        proto: udp
+        port: 1813
+        source: lab_subnets

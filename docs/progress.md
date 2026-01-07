@@ -16,6 +16,9 @@
 - Log: `docs/logs/blueprint-validate-20260106-091320.log`
 - Summary: Validation run in a non-blueprint environment; example.net hostnames expected to fail DNS/PING/HTTPS/TLS checks. Script wiring verified.
 
+## 2026-01-07
+- Added endpoint firewall + middlebox plan and a sanitized UFW inventory template.
+
 ## 2026-01-04
 - Rewrote public history to remove accidentally unsanitized internal details.
 - Replaced the removed content with vendor-neutral edge DNS filtering and guest/WAP guidance.
